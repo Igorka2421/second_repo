@@ -1,1 +1,1 @@
-# second_repo
+# Well, my laboratory consists of two classes, which contain both files and folders.  It is necessary to set the value in the vector that we have such a component as file and folder.  After that, we use the "get" function to return the values   of the class member variables.  The next step, through Void Print(), we make the so-called "beautiful picture" of our class.  Already in the main() function, we set the names of the vectors, as well as files and folders, and add in the sequence we need, and output it.
