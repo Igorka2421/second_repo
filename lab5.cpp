@@ -12,7 +12,7 @@ class File
 private:
 
     int path;
-    int currentPath;
+    int current_path;
     
 
 public:
@@ -21,19 +21,19 @@ public:
     int size_in_mb;
 
 
-    string GetName()
+    string get_name()
     {
         return name;
     }
-    string GetExtension()
+    string get_extension()
     {
         return extension;
     }
-    int GetSize_in_mb()
+    int get_size_in_mb()
     {
         return size_in_mb;
     }
-    File(string name, string extension, int size_in_mb)
+    File(string name, string extension, int size_in_mb) 
     {
         this->name = name;
         this->extension = extension;
@@ -46,7 +46,7 @@ public:
         cout << "Name:" << name << endl;
         cout << "Extension:" << extension << endl;
         cout << "Size:" << size_in_mb << endl;
-        cout << "Path:" << currentPath << endl;
+        cout << "Path:" << current_path << endl;
 
         
 
@@ -61,7 +61,7 @@ class Folder
 private:
 
     int path;
-    static int currentPath;
+    static int current_path;
     
    
 
@@ -78,7 +78,7 @@ public:
     }
 
 };
-int Folder::currentPath = 0;
+int Folder::current_path = 0;
 
 
 
@@ -94,7 +94,7 @@ int main()
     File path2("eng answer", ".txt", 87);
     path2.Print();
     cout << "----------------" << endl;
-    File path3("blabla", ".txt", 54);
+    File path3("history answer", ".txt", 54);
     path3.Print();
     cout << "----------------" << endl;
     folder.addFolder(folder1);
